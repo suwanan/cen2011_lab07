@@ -8,11 +8,18 @@ public class AnalyzeNumbers {
     
     System.out.print("Enter the numbers: ");
     // เพิ่มโค้ด
+    for (int i = 0; i < n; i++) {
+      numbers[i] = input.nextDouble();
+      sum += numbers[i];
+    }
     
     
     double average = sum / n;
     int count = 0; // The number of elements above average
     // เพิ่มโค้ด
+    for (int i = 0; i < n; i++)
+      if (numbers[i] > average)
+        count++;
     
     System.out.println("Average is " + average);
     System.out.println("Number of elements above the average is "
