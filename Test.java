@@ -1,4 +1,5 @@
 public class Test {
+  // ตรวจสอบและแก้ไข
   public static void main(String[] args) {
     double[100] r;
     
